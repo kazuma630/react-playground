@@ -1,12 +1,13 @@
-import { StrictMode } from "react";
-import ReactDOM from "react-dom";
+import React from "react";
+import ReactDom from "react-dom";
 
-import App from "./App";
+const App = () => {
+  return (
+    <React.Fragment>
+      <h1>hallo world</h1>
+      <p>hallo japan</p>
+    </React.Fragment>
+  );
+};
 
-const rootElement = document.getElementById("root");
-ReactDOM.render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-  rootElement
-);
+ReactDom.render(<App />, document.getElementById("root"));
